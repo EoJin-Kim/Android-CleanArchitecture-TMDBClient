@@ -2,7 +2,7 @@ package com.ej.tmdbclient.data.repository.movie.datasourceimpl
 
 import android.util.Log
 import com.ej.tmdbclient.data.model.artist.Artist
-import com.ej.tmdbclient.data.repository.movie.datasource.ArtisitCacheDataSource
+import com.ej.tmdbclient.data.repository.movie.datasource.ArtistCacheDataSource
 import com.ej.tmdbclient.data.repository.movie.datasource.ArtistLocalDataSource
 import com.ej.tmdbclient.data.repository.movie.datasource.ArtistRemoteDataSource
 import com.ej.tmdbclient.domain.repository.ArtistRepository
@@ -10,7 +10,7 @@ import com.ej.tmdbclient.domain.repository.ArtistRepository
 class ArtistRepositoryImpl(
     private val artistRemoteDataSource: ArtistRemoteDataSource,
     private val artistLocalDataSource: ArtistLocalDataSource,
-    private val artCacheDataSource: ArtisitCacheDataSource,
+    private val artCacheDataSource: ArtistCacheDataSource,
 ) : ArtistRepository {
     override suspend fun getArtists(): List<Artist>? {
         return getMoviesFromCache()

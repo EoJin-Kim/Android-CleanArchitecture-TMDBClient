@@ -1,10 +1,9 @@
 package com.ej.tmdbclient.data.repository.movie.datasourceimpl
 
 import com.ej.tmdbclient.data.model.artist.Artist
-import com.ej.tmdbclient.data.model.movie.Movie
-import com.ej.tmdbclient.data.repository.movie.datasource.ArtisitCacheDataSource
+import com.ej.tmdbclient.data.repository.movie.datasource.ArtistCacheDataSource
 
-class ArtistCacheDataSourceImpl : ArtisitCacheDataSource {
+class ArtistCacheDataSourceImpl : ArtistCacheDataSource {
 
     private var artistList = ArrayList<Artist>()
     override suspend fun getArtistsFromCache(): List<Artist> {

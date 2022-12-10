@@ -17,6 +17,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField "String","API_KEY","\"a9d545aea1e3f36270f721f50d521d48\""
+        buildConfigField "String","BASE_URL","\"https://api.themoviedb.org/3/\""
+
     }
 
     buildTypes {
@@ -42,9 +44,11 @@ dependencies {
     def lifecycle_version = "2.5.1"
     def room_version = "2.4.3"
     def coroutine_version = "1.6.4"
-    def degger_version = "1.6.4"
+//    def degger_version = "2.44.2"
+    def degger_version = "2.27"
     def retrofit_version = "2.9.0"
     def glide_version = "4.14.2"
+    def okhttp_intercepter_version = "4.10.0"
 
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
@@ -60,6 +64,7 @@ dependencies {
 
 
     implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
     // To use Kotlin annotation processing tool (kapt)
     kapt "androidx.room:room-compiler:$room_version"
 
@@ -70,9 +75,15 @@ dependencies {
     implementation "com.google.dagger:dagger:$degger_version"
     kapt "com.google.dagger:dagger-compiler:$degger_version"
 
+    implementation "com.google.dagger:dagger-android:$degger_version"
+    kapt "com.google.dagger:dagger-android-processor:$degger_version"
+    implementation "com.google.dagger:dagger-android-support:$degger_version"
+    kapt "com.google.dagger:dagger-android-support:$degger_version"
+
+
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
-    implementation "com.squareup.okhttp3:logging-interceptor"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_intercepter_version"
 
 
     implementation "com.github.bumptech.glide:glide:$glide_version"
