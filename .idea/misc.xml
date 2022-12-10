@@ -6,8 +6,10 @@
         <entry key="..\:/Users/hfhsh/AndroidStudioProjects/CleanArchitecture-TMDBClient/app/src/main/res/drawable/btn_rounded.xml" value="0.117" />
         <entry key="..\:/Users/hfhsh/AndroidStudioProjects/CleanArchitecture-TMDBClient/app/src/main/res/layout/activity_artist.xml" value="0.1875" />
         <entry key="..\:/Users/hfhsh/AndroidStudioProjects/CleanArchitecture-TMDBClient/app/src/main/res/layout/activity_main.xml" value="0.1875" />
-        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/CleanArchitecture-TMDBClient/app/src/main/res/layout/activity_movie.xml" value="0.1875" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/CleanArchitecture-TMDBClient/app/src/main/res/layout/activity_movie.xml" value="0.25" />
         <entry key="..\:/Users/hfhsh/AndroidStudioProjects/CleanArchitecture-TMDBClient/app/src/main/res/layout/activity_tv_show.xml" value="0.17291666666666666" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/CleanArchitecture-TMDBClient/app/src/main/res/layout/list_item.xml" value="0.165625" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/CleanArchitecture-TMDBClient/app/src/main/res/menu/update.xml" value="0.16666666666666666" />
       </map>
     </option>
   </component>
